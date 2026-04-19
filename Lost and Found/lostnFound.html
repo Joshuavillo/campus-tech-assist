@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lost and Found | Campus Tech Assist</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="lostnFound.css" />
+
+    <!-- ICON -->
+    <link rel="icon" type="text/css" href="../Main Picture/mainPic.png" />
+
+    <!-- Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <div class="logo">
+        <div href="../Home/index.html" class="nav-logo">
+          <img
+            src="../Main Picture/mainPic.png"
+            alt="logo"
+            class="logo-image"
+          />
+        </div>
+        <p>Campus Tech Assist</p>
+      </div>
+
+      <div class="section-title">Discover</div>
+
+      <div class="menu">
+        <a href="../index.html">Home</a>
+        <a href="../CCS Department/ccsDept.html">CCS Department</a>
+        <a href="../Guide Go/guideGo.html">Guide Go</a>
+        <a href="../Tech Tutorial/techTut.html">Tech Tutorial</a>
+        <a class="active" href="../Lost and Found/lostnFound.html">
+          Lost and Found</a
+        >
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+      <div class="header">
+        <h2>LOST AND FOUND</h2>
+      </div>
+
+      <!-- MODAL -->
+      <div class="modal" id="itemModal">
+        <div class="modal-content">
+          <h3>Report Lost/Found Item</h3>
+
+          <input type="text" id="itemName" placeholder="Item Name" />
+
+          <select id="category">
+            <option value="lost">Lost</option>
+            <option value="found">Found</option>
+          </select>
+
+          <input type="text" id="itemLocation" placeholder="Location" />
+          <input
+            id="date"
+            type="text"
+            placeholder="mm/dd/yyyy"
+            onclick="this.type = 'date'"
+            onblur="if (!this.value) this.type = 'text';"
+            onchange="
+              this.type = 'text';
+              this.value = this.value;
+            "
+          />
+
+          <div class="file-upload">
+            <input type="file" id="itemImage" hidden />
+            <label for="itemImage" class="custom-file-btn">
+              <i class="fa fa-upload"></i> Choose Image
+            </label>
+            <span id="fileName">No file chosen</span>
+          </div>
+
+          <button id="saveItem" type="button">Save</button>
+        </div>
+      </div>
+
+      <!-- CAROUSEL -->
+      <div class="carousel-container">
+        <!-- ACTION BUTTON -->
+        <div class="action-bar">
+          <button id="addItemBtn">
+            <i class="fa fa-plus"></i> Report Item
+          </button>
+        </div>
+
+        <!-- ITEMS LIST -->
+        <div class="items-container" id="itemsContainer"></div>
+
+        <!-- CRSL BUTTON LEFT -->
+        <button class="crsl-btn"><i class="fas fa-chevron-left"></i></button>
+
+        <div class="carousel-track">
+          <div
+            class="carousel-slide"
+            onclick="window.location.href = 'category_Lost.html'"
+          >
+            <div
+              class="slide-avatar"
+              style="
+                 background-image: url('./LostnFound\ img/Lost.png');
+              "
+            ></div>
+            <div class="slide-name">Lost</div>
+          </div>
+
+          <div
+            class="carousel-slide"
+            onclick="window.location.href = 'category_Found.html'"
+          >
+            <div
+              class="slide-avatar"
+              style="
+                  background-image: url('./LostnFound\ img/Found.png');
+              "
+            ></div>
+            <div class="slide-name">Found</div>
+          </div>
+          </div>
+        </div>
+
+        <!-- CRSL BUTTON RIGHT -->
+
+        <button class="crsl-btn2" id="crsl">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <div class="carousel-indicators">
+          <button class="indicator active"></button>
+          <button class="indicator"></button>
+          <button class="indicator"></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Custom Alert -->
+    <div id="customAlert" class="custom-alert"></div>
+
+    <!-- JS -->
+  </body>
+  <script type="module" src="lostnFound.js"></script>
+</html>
