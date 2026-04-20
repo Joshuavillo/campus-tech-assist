@@ -63,17 +63,11 @@
           </select>
 
           <input type="text" id="itemLocation" placeholder="Location" />
-          <input
-            id="date"
-            type="text"
-            placeholder="mm/dd/yyyy"
-            onclick="this.type = 'date'"
-            onblur="if (!this.value) this.type = 'text';"
-            onchange="
-              this.type = 'text';
-              this.value = this.value;
-            "
-          />
+         <input
+          id="date"
+          type="text"
+          placeholder="mm/dd/yyyy"
+        />
 
           <div class="file-upload">
             <input type="file" id="itemImage" hidden />

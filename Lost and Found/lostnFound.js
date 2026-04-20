@@ -86,21 +86,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ================= DATE INPUT ENHANCEMENT =================
   const dateInput = document.getElementById('date');
-  if (dateInput) {
-    // Open date picker on focus (modern browsers)
-    dateInput.addEventListener('focus', function () {
-      try {
-        this.showPicker();
-      } catch (e) {
-        // showPicker() not supported on older/iOS browsers — falls back to native tap
-      }
-    });
+if (dateInput) {
+  dateInput.addEventListener('focus', function () {
+    this.type = 'date';
+    try { this.showPicker(); } catch (e) {}
+  });
 
-    dateInput.addEventListener('change', function () {
-      this.style.color = '#333';
-      this.style.webkitTextFillColor = '#333';
-    });
-  }
+  dateInput.addEventListener('blur', function () {
+    if (!this.value) {
+      this.type = 'text';
+    }
+  });
+
+  dateInput.addEventListener('change', function () {
+    // Format the value nicely and keep as date type
+    this.style.color = '#333';
+    this.style.webkitTextFillColor = '#333';
+  });
+}
 
   // OPEN
   addBtn.addEventListener('click', () => {

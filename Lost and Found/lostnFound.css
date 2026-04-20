@@ -370,7 +370,7 @@ option {
 /* CRSL RIGHT */
 .crsl-btn2 {
   right: 5%;
-  top: 52.5%;
+  top: 52.8%;
 }
 
 /* CRSL HOVER */
@@ -520,60 +520,6 @@ option {
   font-size: 14px;
   font-weight: 600;
 }
-
-.modal-content input[type='date'] {
-  -webkit-appearance: none;
-  appearance: none;
-  background: rgba(255, 255, 255, 0.9);
-  color: transparent; /* hide empty state */
-  -webkit-text-fill-color: transparent;
-  min-height: 40px;
-  width: 100%;
-  position: relative;
-}
-
-/* Show placeholder text when empty */
-.modal-content input[type='date']::before {
-  content: attr(placeholder);
-  color: #888;
-  font-size: 14px;
-  position: absolute;
-  pointer-events: none;
-}
-
-/* Once a value is picked, show the date text */
-.modal-content input[type='date'].has-value,
-.modal-content input[type='date']:valid {
-  color: #333;
-  -webkit-text-fill-color: #333;
-}
-
-.modal-content input[type='date'].has-value::before,
-.modal-content input[type='date']:valid::before {
-  display: none;
-}
-
-.modal-content input[type='date']::-webkit-datetime-edit {
-  color: #333;
-}
-.modal-content input[type='date']::-webkit-datetime-edit-fields-wrapper {
-  color: #333;
-}
-.modal-content input[type='date']::-webkit-datetime-edit-month-field {
-  color: #333;
-}
-.modal-content input[type='date']::-webkit-datetime-edit-day-field {
-  color: #333;
-}
-.modal-content input[type='date']::-webkit-datetime-edit-year-field {
-  color: #333;
-}
-.modal-content input[type='date']::-webkit-calendar-picker-indicator {
-  opacity: 1;
-  cursor: pointer;
-  filter: invert(0.3);
-}
-
 .modal-content button#saveItem {
   padding: 10px;
   border: none;
