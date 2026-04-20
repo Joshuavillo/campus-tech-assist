@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const container = document.querySelector('.carousel-container');
   const track = document.querySelector('.carousel-track');
   if (!track) return;
-
+ 
   const slides = Array.from(track.children);
   const prevBtn = document.querySelector('.crsl-btn');
   const nextBtn = document.querySelector('.crsl-btn2');
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const containerWidth = container.offsetWidth;
     const slideWidth = slides[currentIndex].offsetWidth;
 
-    // Calculate where the active slide starts (sum of all previous slides + gaps)
+    // Calculate the starting position
     let slideStart = 0;
     for (let i = 0; i < currentIndex; i++) {
       slideStart += slides[i].offsetWidth + 25; // 25 = gap

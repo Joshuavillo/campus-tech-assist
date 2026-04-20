@@ -369,7 +369,8 @@ option {
 
 /* CRSL RIGHT */
 .crsl-btn2 {
-  right: 1%;
+  right: 5%;
+  top: 52.5%;
 }
 
 /* CRSL HOVER */
