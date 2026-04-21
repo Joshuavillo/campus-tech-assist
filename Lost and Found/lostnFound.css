@@ -338,7 +338,7 @@ option {
 .crsl-btn,
 .crsl-btn2 {
   position: absolute;
-  top: 45%; /* aligns with cards */
+  top: 50%; /* aligns with cards */
   transform: translateY(-50%);
 
   width: 55px;
@@ -364,13 +364,12 @@ option {
 
 /* CRSL LEFT */
 .crsl-btn {
-  left: 20px;
+  left: 10px;
 }
 
 /* CRSL RIGHT */
 .crsl-btn2 {
-  right: 5%;
-  top: 52.8%;
+  right: 1%;;
 }
 
 /* CRSL HOVER */
@@ -520,6 +519,7 @@ option {
   font-size: 14px;
   font-weight: 600;
 }
+
 .modal-content button#saveItem {
   padding: 10px;
   border: none;

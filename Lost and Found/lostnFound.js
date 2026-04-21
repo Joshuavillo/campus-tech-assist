@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const indicators = document.querySelectorAll('.indicator');
 
   let currentIndex = 0;
-  const slideWidth = 205;
 
   function updateCarousel() {
     const containerWidth = container.offsetWidth;

@@ -82,61 +82,55 @@
       </div>
 
       <!-- CAROUSEL -->
-      <div class="carousel-container">
-        <!-- ACTION BUTTON -->
-        <div class="action-bar">
-          <button id="addItemBtn">
-            <i class="fa fa-plus"></i> Report Item
-          </button>
-        </div>
+     <div class="carousel-container">
+  <!-- ACTION BUTTON -->
+  <div class="action-bar">
+    <button id="addItemBtn">
+      <i class="fa fa-plus"></i> Report Item
+    </button>
+  </div>
 
-        <!-- ITEMS LIST -->
-        <div class="items-container" id="itemsContainer"></div>
+  <!-- ITEMS LIST -->
+  <div class="items-container" id="itemsContainer"></div>
 
-        <!-- CRSL BUTTON LEFT -->
-        <button class="crsl-btn"><i class="fas fa-chevron-left"></i></button>
+  <!-- CRSL BUTTON LEFT -->
+  <button class="crsl-btn"><i class="fas fa-chevron-left"></i></button>
 
-        <div class="carousel-track">
-          <div
-            class="carousel-slide"
-            onclick="window.location.href = 'category_Lost.html'"
-          >
-            <div
-              class="slide-avatar"
-              style="
-                 background-image: url('./LostnFound\ img/Lost.jpg');
-              "
-            ></div>
-            <div class="slide-name">Lost</div>
-          </div>
-
-          <div
-            class="carousel-slide"
-            onclick="window.location.href = 'category_Found.html'"
-          >
-            <div
-              class="slide-avatar"
-              style="
-                  background-image: url('./LostnFound\ img/Found.jpg');
-              "
-            ></div>
-            <div class="slide-name">Found</div>
-          </div>
-          </div>
-        </div>
-
-        <!-- CRSL BUTTON RIGHT -->
-
-        <button class="crsl-btn2" id="crsl">
-          <i class="fas fa-chevron-right"></i>
-        </button>
-
-        <div class="carousel-indicators">
-          <button class="indicator active"></button>
-          <button class="indicator"></button>
-        </div>
-      </div>
+  <div class="carousel-track">
+    <div
+      class="carousel-slide"
+      onclick="window.location.href = 'category_Lost.html'"
+    >
+      <div
+        class="slide-avatar"
+        style="background-image: url('./LostnFound\ img/Lost.jpg');"
+      ></div>
+      <div class="slide-name">Lost</div>
     </div>
+
+    <div
+      class="carousel-slide"
+      onclick="window.location.href = 'category_Found.html'"
+    >
+      <div
+        class="slide-avatar"
+        style="background-image: url('./LostnFound\ img/Found.jpg');"
+      ></div>
+      <div class="slide-name">Found</div>
+    </div>
+  </div> <!-- ✅ closes .carousel-track -->
+
+  <!-- CRSL BUTTON RIGHT -->
+  <button class="crsl-btn2" id="crsl">
+    <i class="fas fa-chevron-right"></i>
+  </button>
+
+  <div class="carousel-indicators">
+    <button class="indicator active"></button>
+    <button class="indicator"></button>
+  </div>
+
+</div> <!-- closes .carousel-container -->
 
     <!-- Custom Alert -->
     <div id="customAlert" class="custom-alert"></div>
